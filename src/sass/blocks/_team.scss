@@ -1,0 +1,121 @@
+.team {
+    margin: 90px 50px 0 306px;
+    position: relative;
+&__header{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    color: $main-color;
+}
+&__tabs{
+    position: absolute;
+    left: -39px;
+    margin-top: 5px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+&__tab{
+    display: flex;
+    justify-content: center;
+    color: #565656;
+    font-weight: 700;
+    font-size: 14px;
+    width: 150px;
+    height: 40px;
+    align-items: center;
+    
+   
+    &:hover {
+        color: #ffffff;
+        text-decoration: none;
+        background-color: $main-color;
+        transition: all 0.6s;
+        cursor: pointer;
+    }
+    &_active {
+        color: #ffffff;
+        text-decoration: none;
+        background-color: $main-color;
+    }
+}
+&__wrapper{
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 0 10px #e5e5e5;
+    width: 880px;
+    margin-bottom: 30px;
+    margin-top:60px;
+    position: absolute;
+}
+&__select{
+    position: relative;
+    display: flex;
+    margin: 13px;
+    p{
+        padding-top: 16px;
+    }
+    select{
+        margin: 29px 0 0 19px;
+        border: none;
+        border-bottom: 1px solid #e5e5e5;
+        width: 128px;
+        cursor: pointer;
+        appearance: none;
+        height: 25px;
+        
+        
+    }
+&_arrow{
+    position:absolute;
+        top: 37px;
+        left: 185px;
+        width :0;
+        height: 0;
+        pointer-events: none;
+        border-style :solid;
+        border-width: 8px 5px 0 5px;
+        border-color: #454545 transparent transparent transparent;   
+}
+}
+&__card{
+
+    border: 1px solid #bdbdbd;
+    height: auto;
+    max-width: 919px;
+    margin-left: 13px;
+    margin-bottom: 28px;
+    &_title{
+        font-size: 24px;
+        text-align: center;
+        margin-top: 35px;
+    }
+    &_subtitle{
+        font-size: 18px;
+        font-weight: 700;
+        padding-bottom: 20px;
+        color: #000;
+    }
+    &_wrap{
+        display: grid;
+        grid-template-columns: 270px 270px;
+        column-gap: 200px;
+        margin: 33px 0 0 32px;
+    }
+    
+    div{
+        padding-bottom: 20px;
+        color: #757575;
+        span {
+            color: #000;
+            display: flex;
+            justify-content: end;
+            
+        }
+    }
+}
+.grid{
+    display: grid;
+    grid-template-columns: 220px 130px;
+    column-gap: 40px;
+} 
+}

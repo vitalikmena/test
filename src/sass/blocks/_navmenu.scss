@@ -1,0 +1,61 @@
+.navmenu {
+    background-color: $main-color;
+    position: fixed;
+    margin-top: 54px; 
+    height: 100%;
+    width: 276px;
+    padding-top: 71px;
+    .media{
+      display: none;    
+  }
+    
+    
+    a{
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: #fff;
+    padding-left: 27px;
+    
+    &:hover{
+        background-color: #412766;
+    }
+    
+    }
+
+    .select{
+      
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        select{
+          display: flex;
+          width: 100%;
+          cursor: pointer;
+          padding: 10px ;
+          outline: 0;
+          border: 0;
+          border-radius: 0;
+          appearance: none;
+          background-color: $main-color;
+          color: #fff;
+          padding-left: 27px;
+          font-size: 16px;
+          &:hover{
+            background-color: #412766;
+        }
+        }   
+      .select__arrow{
+        position :absolute;
+        top: 16px;
+        right: 15px;
+        width :0;
+        height: 0;
+        pointer-events: none;
+        border-style :solid;
+        border-width: 8px 5px 0 5px;
+        border-color: #fff transparent transparent transparent;
+        
+        }
+      } 
+}
